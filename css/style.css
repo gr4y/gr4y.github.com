@@ -12,6 +12,10 @@ body {
 	width: 30%
 }
 
+#wwweb {
+	clear: both;
+}
+
 #projects {
 	float: right;
 	width: 65%;
