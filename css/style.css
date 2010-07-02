@@ -1,0 +1,19 @@
+body {
+	padding: 20px;
+}
+
+#about {
+	float: left;
+	width: 30%
+}
+
+#projects, #wwweb {
+	float: right;
+	width: 70%;
+}
+
+
+
+ul {
+	list-style: disc;
+}
