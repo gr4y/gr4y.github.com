@@ -2,17 +2,20 @@ body {
 	padding: 20px;
 }
 
-#about {
+.box {
+	margin-bottom: 50px;
+	padding: 0px;
+}
+
+#about, #wwweb {
 	float: left;
 	width: 30%
 }
 
-#projects, #wwweb {
+#projects {
 	float: right;
-	width: 70%;
+	width: 65%;
 }
-
-
 
 ul {
 	list-style: disc;
