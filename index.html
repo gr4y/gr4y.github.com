@@ -1,35 +1,42 @@
 <html>
 	<head>
 		<title>gr4y.github.com</title>
+		<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
+		<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
+		<!--[if lt IE 8]>
+			<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
+		<![endif]-->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<div id="about" class="box">
-			<h2 class="box-title">about me</h2>
-			<div class="box-content">
-				<p>junior developer from leipzig, germany</p>
-				<p>loves ruby, rails, git, css, jquery and the open source philosophy.</p>
+		<div class="container">
+			<div class="span-10 prepend-1" id="about">
+				<h2 class="box-title">about</h2>
+				<div class="box-content">
+					<p>junior developer from leipzig, germany</p>
+					<p>loves ruby, rails, git, css, jquery and the open source philosophy.</p>
+				</div>
 			</div>
-		</div>
-		<div id="projects" class="box">
-			<h2 class="box-title">projects</h2>
-			<div class="box-content">
-				<ul>
-					<li><a href="http://github.com/gr4y/streambot">streambot</a></li>
-				</ul>
+			<div class="span-5 prepend-2" id="www">
+				<h2 class="box-title">gr4y on www</h2>
+				<div class="box-content">
+					<ul>
+						<li><a href="http://gr4y.posterous.com">private blog</a></li>
+						<li><a href="http://twitter.com/gr4y">private twitter [german]</a></li>
+						<li><a href="http://facebook.com/gr4y.web">private facebook [german]</a></li>
+						<li><a href="http://www.railstastic.com">blog</a></li>
+						<li><a href="http://twitter.com/railstastic">twitter</a></li>
+						<li><a href="http://www.facebook.com/pages/railstastic/124915664187084">facebook</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div id="wwweb" class="box">
-			<h2 class="box-title">gr4y on www</h2>
-			<div class="box-content">
-				<ul>
-					<li><a href="http://gr4y.posterous.com">private blog</a></li>
-					<li><a href="http://twitter.com/gr4y">private twitter [german]</a></li>
-					<li><a href="http://facebook.com/gr4y.web">private facebook [german]</a></li>
-					<li><a href="http://www.railstastic.com">blog</a></li>
-					<li><a href="http://twitter.com/railstastic">twitter</a></li>
-					<li><a href="http://www.facebook.com/pages/railstastic/124915664187084">facebook</a></li>
-				</ul>
+			<div class="span-22 prepend-1" id="projects">
+				<h2 class="box-title">projects</h2>
+				<div class="box-content">
+					<ul>
+						<li><a href="http://github.com/gr4y/streambot">streambot</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>

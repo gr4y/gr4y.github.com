@@ -1,26 +1,35 @@
 body {
-	padding: 20px;
+	background: #B1B1B1;
+	margin-top: 30px;
 }
 
-.box {
-	margin-bottom: 50px;
-	padding: 0px;
+.container {
+	background: #D8D8D8;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
 }
 
-#about, #wwweb {
-	float: left;
-	width: 30%
+.box-title { 
+	color: #000; 
+	font-weight: bold; 
+	text-shadow: #FFF 1px 1px 0; 
 }
 
-#wwweb {
-	clear: both;
+.box-content { 
+	color: #000; 
+	text-shadow: #FFF 1px 1px 0;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background: #ABABAB;
+	padding: 10px;
 }
 
-#projects {
-	float: right;
-	width: 65%;
+ul, ol {
+	list-style-type: square;
+	margin-left: -15px;
 }
 
-ul {
-	list-style: disc;
-}
