@@ -5,8 +5,6 @@ $(function () {
 	$.getJSON('http://github.com/api/v2/json/repos/show/gr4y?callback=?', function(data, status) {
 		$.each(data.repositories, function() {
 			
-			console.log(this);
-			
 			var projectName = this.name;
 			var projectDescription = this.description;
 			var projectLangauge = this.language;
@@ -32,8 +30,10 @@ $(function () {
 				$(text).html(projectDescription);
 			}
 			$(line).append(text).attr('class', 'project');
-			$(projects).append(line);
 			
+			if(projectName != "gr4y.github.com") {
+				$(projects).append(line);				
+			}
 		});
 	});
 	
