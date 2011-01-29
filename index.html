@@ -1,63 +1,53 @@
 <html>
 	<head>
 		<title>gr4y.github.com</title>
-		<link rel="stylesheet" href="css/blueprint/screen.css" type="text/css" media="screen, projection">
-		<link rel="stylesheet" href="css/blueprint/print.css" type="text/css" media="print">
-		<!--[if IE]>
-			<link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection">
-		<![endif]-->
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Orbitron">
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Neucha">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
-		<div class="container">
-			<!--[if IE]>
-			<div class="span-22 prepend-1">
-				<h2 class="box-title" style="color: red;">Ey, yo! You are using a shitty browser!</h2>
-				<p>I don't give a shit on Microsoft IE because they don't give a shit on standards. Please use a reasonable browser! Thanks!</p>
-			</div>
-			<![endif]-->
-			<div class="span-10 prepend-1" id="about">
-				<h2 class="box-title">about</h2>
-				<div class="box-content">
-					<p>junior developer from leipzig, germany</p>
-					<p>loves ruby, rails, git, css, jquery and the open source philosophy.</p>
+		<div id="container">
+			<div id="inner-container">
+				<ul id="sidebar">
+					<li id="user_info" class="widget">
+						<h2 class="widget-title">about gr4y</h2>
+						<div class="widget-content">
+							<p><img src="http://www.gravatar.com/avatar/85e74a50560bd5c2eae72d905400bd8a?s=170" class="avatar" /></p>
+							<p>developer from leipzig, germany.</p>
+							<p>apple fanboy, linux admin, wordpress evangelist, twitter addict, ruby fanboy</p>
+						</div>
+					</li>
+				
+					<li id="websites" class="widget">
+						<h2 class="widget-title">gr4y@interwebs</h2>
+						<div class="widget-content">
+							<ul class="list"> 
+								<li><a href="http://gr4y.posterous.com">personal blog [german]</a></li> 
+								<li><a href="http://twitter.com/gr4y">personal twitter [german]</a></li> 
+								<li><a href="http://facebook.com/gr4y.web">personal facebook [german]</a></li> 
+								<li><a href="http://www.railstastic.com">blog</a></li> 
+								<li><a href="http://twitter.com/railstastic">twitter</a></li> 
+								<li><a href="http://www.facebook.com/pages/railstastic/124915664187084">facebook</a></li> 
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<ul id="content">
+					<li class="widget">
+						<h2 class="widget-title">projects</h2>
+					</li>
+					<div class="widget-content">
+						<ul id="projects"></ul>
+					</div>
+				</ul>
+				<div id="footer">
+					<!-- Piwik Image Tracker -->
+					<img src="http://www.gr4yweb.de/piwik/piwik.php?idsite=6&rec=1" style="border:0" alt="" />
+					<!-- End Piwik -->
 				</div>
 			</div>
-			<div class="span-11 prepend-1" id="www">
-				<h2 class="box-title">gr4y on www</h2>
-				<div class="box-content">
-					<ul>
-						<li><a href="http://gr4y.posterous.com">private blog</a></li>
-						<li><a href="http://twitter.com/gr4y">private twitter [german]</a></li>
-						<li><a href="http://facebook.com/gr4y.web">private facebook [german]</a></li>
-						<li><a href="http://www.railstastic.com">blog</a></li>
-						<li><a href="http://twitter.com/railstastic">twitter</a></li>
-						<li><a href="http://www.facebook.com/pages/railstastic/124915664187084">facebook</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="span-22 prepend-1" id="projects">
-				<h2 class="box-title">projects</h2>
-				<div class="box-content">
-					<ul>
-						<li class="discontinued">
-							<a href="http://github.com/gr4y/streambot">streambot</a>
-							<p>a simple gem that tracks several keywords via twitter streaming api and re-publish it on twitter<br/><b>development discontinued</b></p>							
-						</li>
-						<li>
-							<a href="http://github.com/gr4y/i18n">i18n</a>
-							<p>A simple i18n class for php, without using of gettext</p>
-						</li>
-						<li>
-							<a href="http://github.com/gr4y/twiauth">twiauth</a>
-							<p>tiwauth is an short and simple oauth wrapper for twitter</p>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<!-- Piwik Image Tracker -->
-			<img src="http://www.gr4yweb.de/piwik/piwik.php?idsite=6&rec=1" style="border:0" alt="" />
-			<!-- End Piwik -->
 		</div>
 	</body>
 </html>
