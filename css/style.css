@@ -92,7 +92,12 @@ p {
 	margin-bottom: 10px;
 }
 
-#content .forked {
+#content span {
+	color: #666;
+	padding-right: 10px;
+}
+
+#content span.forked {
 	color: #FC0;
 	font-style: italic	;
 }
@@ -106,6 +111,11 @@ p {
 	color: #c7d3de;
 	font-style: italic;
 	margin-bottom: 10px;
+}
+
+.project-title {
+	display: inline-block;
+	padding-right: 10px;
 }
 
 #footer {

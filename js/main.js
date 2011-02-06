@@ -7,20 +7,22 @@ $(function () {
 			
 			var projectName = this.name;
 			var projectDescription = this.description;
-			var projectLangauge = this.language;
+			var projectLanguage = this.language;
 			var projectUrl = this.url;
 			var isForked = this.fork;
 
 			var title = document.createElement('h2');
+			var language = document.createElement('span');
+			$(language).html(projectLanguage);
 			var text = document.createElement('p');
-			var line = document.createElement ('li');
-			
+			var line = document.createElement ('li');	
+				
 			var projectLink = document.createElement('a');
 			$(projectLink).attr('href', projectUrl);
 			$(projectLink).html(projectName);
 			
-			$(title).append(projectLink);
-			$(line).append(title);
+			$(title).append(projectLink).attr('class','project-title')
+			$(line).append(title).append(language);
 			
 			if(isForked) {
 				var forkBatch = document.createElement('span');
