@@ -17,6 +17,8 @@ $(function () {
 			var text = document.createElement('p');
 			var line = document.createElement ('li');	
 				
+			$(line).hide();
+				
 			var projectLink = document.createElement('a');
 			$(projectLink).attr('href', projectUrl);
 			$(projectLink).html(projectName);
@@ -36,6 +38,9 @@ $(function () {
 			if(projectName != "gr4y.github.com") {
 				$(projects).append(line);				
 			}
+			
+			$(line).fadeIn(2000);
+			
 		});
 	});
 	
