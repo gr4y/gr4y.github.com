@@ -1,12 +1,5 @@
 $(function () {
 	
-	function effectFadeIn(element) {
-		$(element).fadeTo(2000, 1).fadeTo(2000, 0.5, effectFadeOut(element))
-	}
-	function effectFadeOut(element) {
-		$(element).fadeTo(2000, 0.5).fadeTo(2000, 1, effectFadeIn(element))
-	}
-	
 	var projects = $('#projects');
 	projects.ready(function() {
 		$.getJSON('http://github.com/api/v2/json/repos/show/gr4y?callback=?', function(data, status) {
@@ -36,5 +29,4 @@ $(function () {
 			});
 		});
 	})
-	// effectFadeOut('.avatar');
 });
