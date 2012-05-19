@@ -1,10 +1,18 @@
-<html>
+<!DOCTYPE html>
 	<head>
 		<title>gr4y.github.com</title>
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Orbitron">
-		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Neucha">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/mustache.js" type="text/javascript" charset="utf-8"></script>
+		<script id="projectTmpl" type="text/template" charset="utf-8">
+		<li class="project">
+			<h2 class="project-title">
+				<a href="{{url}}">{{name}}</a>
+			</h2>
+			<span>{{language}}</span>
+			<p>{{description}}</p>
+		</li>
+		</script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
@@ -15,18 +23,18 @@
 						<h2 class="widget-title">about gr4y</h2>
 						<div class="widget-content">
 							<p><img src="http://www.gravatar.com/avatar/85e74a50560bd5c2eae72d905400bd8a?s=170" class="avatar" /></p>
-							<p>apple fanboy, pragmatist, developer</p>
+							<p>apple-fanboy, pragmatist, developer</p>
 							<p>from leipzig, germany.</p>
 						</div>
 					</li>
-				
 					<li id="websites" class="widget">
 						<h2 class="widget-title">gr4y@interwebs</h2>
 						<div class="widget-content">
 							<ul class="list"> 
-								<li><a href="http://www.gr4yweb.de">blog</a></li> 
+								<li><a href="http://www.gr4yweb.de">german blog</a></li> 
+								<li><a href="http://gr4y.tumblr.com">english blog</a></li>
 								<li><a href="http://twitter.com/gr4y">twitter</a></li> 
-								<li><a href="http://gr4yweb.de/+">google+</a></li>
+								<li><a href="http://gr4yweb.de/+">google+</a></li
 							</ul>
 						</div>
 					</li>
