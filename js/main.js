@@ -1,7 +1,10 @@
 $(function () {
 	var projects = $("#projects");
-	$.getJSON('http://github.com/api/v2/json/repos/show/gr4y?callback=?', function(data, status) {
-		$.each(data.repositories, function() {
+	$.getJSON('https://api.github.com/users/gr4y/repos', function(data, status) {
+		
+		console.log(data);
+		
+		$.each(data, function() {
 			if(!this.fork && this.name != "gr4y.github.com") {
 				var projectTmpl = $('#projectTmpl').html();
 				$(projects).append(Mustache.to_html(projectTmpl, this));				
