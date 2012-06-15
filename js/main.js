@@ -7,5 +7,6 @@ $(function () {
 				$(projects).append(Mustache.to_html(projectTmpl, this));				
 			}
 		});
+		FlattrLoader.setup();
 	});
 });

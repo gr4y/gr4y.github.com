@@ -2,15 +2,39 @@
 	<head>
 		<title>gr4y.github.com</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<script type="text/javascript">
+		/* <![CDATA[ */
+		(function() {
+		    var s = document.createElement('script');
+		    var t = document.getElementsByTagName('script')[0];
+
+		    s.type = 'text/javascript';
+		    s.async = true;
+		    s.src = 'http://api.flattr.com/js/0.6/load.js';
+
+		    t.parentNode.insertBefore(s, t);
+		 })();
+		/* ]]> */
+		</script>
 		<script src="js/mustache.js" type="text/javascript" charset="utf-8"></script>
 		<script id="projectTmpl" type="text/template" charset="utf-8">
 		<li class="project">
 			<h2 class="project-title">
-				<a href="{{url}}">{{name}}</a>
+				<a href="{{html_url}}">{{name}}</a>
 			</h2>
-			<span>{{language}}</span>
+			<span class="language">{{language}}</span>
 			<p>{{description}}</p>
+			<div class="meta">
+				<span class="button">
+					<a class="FlattrButton" style="display:none;"
+						title="{{name}}"
+						rel="flattr;uid:gr4y;category:software;popout:0;button:compact;"
+						href="{{html_url}}">{{description}}</a>
+				</span>	
+			</div>
 		</li>
 		</script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>

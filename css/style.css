@@ -90,12 +90,21 @@ p {
 }
 
 #content .project {
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 }
 
-#content span {
+#content .language {
+	padding-left: 10px;
+}
+
+#content .meta {
+	display: inline-block;
+	padding-top: 10px;
 	color: #000;
-	padding-right: 10px;
+}
+
+#content .meta .button {
+	padding-right: 20px;
 }
 
 #content span.forked {
