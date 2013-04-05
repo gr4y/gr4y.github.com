@@ -77,3 +77,39 @@ body {
 .vcard:after {
 	clear: both;
 }
+
+@media only screen and (max-width: 640px) {
+	body {
+		font-size: 14px;
+	}
+
+	.vcard {
+		padding: 1.5em 0;
+		margin: 1em auto;
+		width: 90%;
+	}
+
+	.vcard:after {
+		clear: none;
+	}
+
+	.vcard .picture {
+		text-align: center;
+		float: none;
+		display: block;
+		width: 100%;
+	}
+
+	.vcard .about {
+		padding: 0;
+		text-align: center;
+		float: none;
+		display: block;
+		width: 100%;
+	}
+
+	.vcard .about .name {
+		font-size: 1.5em;
+	}
+
+}
