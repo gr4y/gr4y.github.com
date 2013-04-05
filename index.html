@@ -1,89 +1,48 @@
 <!DOCTYPE html>
 	<head>
 		<title>swessel.me</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-
-		<script type="text/javascript">
-		/* <![CDATA[ */
-		(function() {
-		    var s = document.createElement('script');
-		    var t = document.getElementsByTagName('script')[0];
-
-		    s.type = 'text/javascript';
-		    s.async = true;
-		    s.src = 'http://api.flattr.com/js/0.6/load.js';
-
-		    t.parentNode.insertBefore(s, t);
-		 })();
-		/* ]]> */
-		</script>
-		<script src="js/mustache.js" type="text/javascript" charset="utf-8"></script>
-		<script id="projectTmpl" type="text/template" charset="utf-8">
-		<li class="project">
-			<h2 class="project-title">
-				<a href="{{html_url}}">{{name}}</a>
-			</h2>
-			<span class="language">{{language}}</span>
-			<p>{{description}}</p>
-			<div class="meta">
-				<span class="button">
-					<a class="FlattrButton" style="display:none;"
-						title="{{name}}"
-						rel="flattr;uid:gr4y;category:software;popout:0;button:compact;"
-						href="{{html_url}}">{{description}}</a>
-				</span>	
-			</div>
-		</li>
-		</script>
-		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+		<!--[if IE 7]>
+			<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome-ie7.min.css">
+		<![endif]-->
 	</head>
 	<body>
-		<div id="container">
-			<div id="inner-container">
-				<ul id="sidebar">
-					<li id="user_info" class="widget">
-						<h2 class="widget-title">about gr4y</h2>
-						<div class="widget-content">
-							<p><img src="http://www.gravatar.com/avatar/85e74a50560bd5c2eae72d905400bd8a?s=170" class="avatar" /></p>
-							<p>-fanboy, pragmatic, sarcastic, developer</p>
-							<p>from leipzig, germany</p>
-						</div>
-					</li>
-					<li id="websites" class="widget">
-						<h2 class="widget-title">gr4y@interwebs</h2>
-						<div class="widget-content">
-							<ul class="list"> 
-								<li><a href="http://blog.swessel.me">blog</a></li>
-								<li><a href="http://twitter.com/gr4y">twitter</a></li>
-							</ul>
-						</div>
-					</li>
-				</ul>
-				<ul id="content">
-					<li class="widget">
-						<h2 class="widget-title">projects</h2>
-						<div class="widget-content">
-							<ul id="projects"></ul>
-						</div>
-					</li>
-				</ul>
-				<div id="footer">
-					<!-- Piwik --> 
-					<script type="text/javascript">
-					var pkBaseURL = (("https:" == document.location.protocol) ? "https://gr4yweb.eu/piwik/" : "http://gr4yweb.eu/piwik/");
-					document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
-					</script><script type="text/javascript">
-					try {
-					var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
-					piwikTracker.trackPageView();
-					piwikTracker.enableLinkTracking();
-					} catch( err ) {}
-					</script><noscript><p><img src="http://gr4yweb.eu/piwik/piwik.php?idsite=6" style="border:0" alt="" /></p></noscript>
-					<!-- End Piwik Tracking Code -->
-									</div>
+		<section class="vcard">
+			<div class="picture">
+				<img src="http://www.gravatar.com/avatar/85e74a50560bd5c2eae72d905400bd8a?s=200" />
 			</div>
-		</div>
+			<div class="about">
+				<h2 class="name">Sascha Wessel</h2>
+				<ul class="social">
+					<li>
+						<a href="http://github.com/gr4y">
+							<i class="icon-github"></i>
+						</a>
+					</li>
+					<li>
+						<a href="http://twitter.com/gr4y">
+							<i class="icon-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Piwik --> 
+		<script type="text/javascript">
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://gr4yweb.eu/piwik/" : "http://gr4yweb.eu/piwik/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+		try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 6);
+		piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+		</script><noscript><p><img src="http://gr4yweb.eu/piwik/piwik.php?idsite=6" style="border:0" alt="" /></p></noscript>
+		<!-- End Piwik Tracking Code -->
+
 	</body>
 </html>
