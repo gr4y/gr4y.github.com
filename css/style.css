@@ -78,7 +78,7 @@ body {
 	clear: both;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 480px) {
 	body {
 		font-size: 14px;
 	}
