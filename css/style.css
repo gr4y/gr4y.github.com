@@ -55,7 +55,24 @@ body {
 .vcard .about .name {
 	font-size: 2em;
 	color: #333;
-	margin: 0.5em 0 1em 0;
+	margin: 0.5em 0 0.5em 0;
+}
+
+.vcard .about .details {
+	font-size: 1em;
+	padding-bottom: 1em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px dotted #999;
+}
+
+.vcard .about .details span i {
+	padding-right: 0.3em;
+	color: #333;
+}
+
+.vcard .about .details span {
+	padding-right: 2.5em;
+	color: #999;
 }
 
 .vcard .social {
