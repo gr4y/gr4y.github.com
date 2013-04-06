@@ -60,7 +60,13 @@ body {
 .vcard .about .name {
 	font-size: 2em;
 	color: #333;
-	margin: 0.5em 0 0.5em 0;
+	margin: 0.5em 0 0.25em 0;
+}
+
+.vcard .about .bio {
+	color: #666;
+	padding: 0.25em 0 0.5em 0;
+	font-size: 1.25em;
 }
 
 .vcard .about .details {
@@ -70,7 +76,7 @@ body {
 	border-bottom: 1px dotted #999;
 }
 
-.vcard .about .details span i {
+.vcard .about .details i {
 	padding-right: 0.3em;
 	color: #333;
 }
