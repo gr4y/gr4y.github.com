@@ -103,6 +103,29 @@ body {
 	color: #999;
 }
 
+.vcard .social li a i {
+	padding: 0.2em 0.1em;
+	border-radius: 0.1em;
+}
+
+.vcard .social .icon-twitter {
+	color: #16b0f4;
+}
+
+.vcard .social .icon-facebook {
+	background: #2d4486;
+	color: #fff;
+}
+
+.vcard .social .icon-github {
+	color: #262626;
+}
+
+.vcard .social .icon-google-plus {
+	background: #e01a1f;
+	color: #fff;
+}
+
 .vcard:after {
 	clear: both;
 }
