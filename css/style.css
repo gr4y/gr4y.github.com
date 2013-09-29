@@ -180,6 +180,10 @@ footer a {
 		font-size: 1.5em;
 	}
 
+	.vcard .about .social {
+		padding-top: 1.25em;
+	}
+
 	.vcard .location, 
 	.vcard .envelope {
 		display: block;
