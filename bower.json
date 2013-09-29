@@ -1,0 +1,8 @@
+{
+  "name": "portfolio",
+  "dependencies": {
+    "jquery": "latest",
+    "normalize-css": "latest",
+    "font-awesome": "latest"
+  }
+}
