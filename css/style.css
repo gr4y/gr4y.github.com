@@ -4,6 +4,11 @@ body {
 	font-size: 16px;
 }
 
+.code {
+	font-family: Menlo, monospace;
+	font-size: 1.2em;
+}
+
 ::selection {
 	color: #FFF;
 	background: #cbd878;
@@ -21,15 +26,11 @@ body {
 
 .vcard {
 	background: #fff;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-
 	width: 80%;
 	margin: 2em auto;
 	padding: 1em;
-
 	*zoom: 1;
+	border-bottom: 3px solid #ccd1ad;
 }
 
 .vcard .picture {
@@ -40,9 +41,6 @@ body {
 .vcard .picture img {
 	height: auto;
 	max-width: 100%;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
 }
 
 .vcard .about {
@@ -74,7 +72,7 @@ body {
 	font-size: 1em;
 	padding-bottom: 1em;
 	margin-bottom: 0.5em;
-	border-bottom: 1px dotted #999;
+	border-bottom: 1px solid #ccd1ad;
 }
 
 .vcard .about .details i {
@@ -95,6 +93,7 @@ body {
 
 .vcard .social li {
 	display: inline-block;
+	padding: 0.2em 0.2em;
 }
 
 .vcard .social li a {
@@ -105,24 +104,29 @@ body {
 
 .vcard .social li a i {
 	padding: 0.2em 0.1em;
-	border-radius: 0.1em;
 }
 
-.vcard .social .icon-twitter {
+.vcard .social li.twitter i {
 	color: #16b0f4;
 }
 
-.vcard .social .icon-facebook {
+.vcard .social li.facebook {
 	background: #2d4486;
+}
+
+.vcard .social li.facebook i {
 	color: #fff;
 }
 
-.vcard .social .icon-github {
+.vcard .social li.github i {
 	color: #262626;
 }
 
-.vcard .social .icon-google-plus {
+.vcard .social li.gplus {
 	background: #e01a1f;
+}
+
+.vcard .social li.gplus i {
 	color: #fff;
 }
 
@@ -133,7 +137,6 @@ body {
 footer {
 	width: 80%;
 	margin: 1em auto;
-
 	text-align: center;
 	font-size: 0.75em;
 	color: #999;
@@ -175,6 +178,12 @@ footer a {
 
 	.vcard .about .name {
 		font-size: 1.5em;
+	}
+
+	.vcard .location, 
+	.vcard .envelope {
+		display: block;
+		font-size: 1.25em;
 	}
 
 }
