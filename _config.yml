@@ -1,0 +1,14 @@
+# Site Options
+title: "Sascha Wessel"
+url: http://192.168.178.31:4000
+
+tracking: false
+show_drafts: true
+
+# Settings
+exclude: ['.bowerrc', '.gitignore', 'bower.json']
+encoding: UTF-8
+timezone: Europe/Berlin
+relative_permalinks: false
+pygments: true
+markdown: kramdown
