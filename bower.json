@@ -3,6 +3,7 @@
   "dependencies": {
     "jquery": "latest",
     "normalize-css": "latest",
-    "font-awesome": "latest"
+    "font-awesome": "latest",
+    "gridism": "latest"
   }
 }
