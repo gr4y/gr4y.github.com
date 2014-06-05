@@ -10,5 +10,5 @@ exclude: ['.bowerrc', '.gitignore', 'bower.json']
 encoding: UTF-8
 timezone: Europe/Berlin
 relative_permalinks: false
-pygments: true
+highlighter: true
 markdown: kramdown
