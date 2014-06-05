@@ -1,0 +1,7 @@
+{% if site.data.profiles %}
+<ul class="social">
+  {% for profile in site.data.profiles %}
+  <li><a href="{{ profile.url }}" title="{{ profile.alt }}"><i class="fa {{ profile.icon }}"></i></a></li>
+  {% endfor %}
+</ul>
+{% endif %}

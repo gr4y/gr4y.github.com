@@ -1,126 +1,86 @@
 body {
-	font-family: 'Maven Pro', sans-serif;
-	background: #eaefc7;
+	font-family: 'Roboto Slab', sans-serif;
+	background: white;
+	color: #7a8b46;
 	font-size: 14px;
 }
 
-.code {
-	font-family: Menlo, monospace;
-	font-size: 1.2em;
-}
-
 ::selection {
-	color: #FFF;
-	background: #cbd878;
+	background: #555b2a;
+	color: #e8ebd4;
 }
 
-.vcard:after,
-.vcard:before {
-	content: " ";
-	display: table;
+header {
+	padding: 2.5em 0;
+	background: #7a8b46;
+	color: #e8ebd4;	
+	box-shadow: inset 0 -8px 8px -8px #606e36;
 }
 
-.vcard:after {
-	clear: both;
+header .picture {
+	text-align: center;
 }
 
-.vcard {
-	background: #fff;
-	width: 80%;
-	margin: 2em auto;
-	padding: 1em;
-	*zoom: 1;
-	border-bottom: 3px solid #ccd1ad;
-}
-
-.vcard .picture {
-	float: left;
-	width: 15%;
-}
-
-.vcard .picture img {
-	height: auto;
-	max-width: 100%;
-	-webkit-border-radius: 50%;
-	-moz-webkit-border-radius: 50%;
+header .picture img {
+	height: 10em;
+	width: 10em;
+	background: #e8ebd4;
 	border-radius: 50%;
+	border: 0.5em solid #e8ebd4;
+	box-shadow: 0 1px #4d4d46;
 }
 
-.vcard .about {
-	padding-left: 2em;
-	width: 85%;
-
-	text-align: left;
-	float: right;
-
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-
-}
-
-.vcard .about .name {
-	font-size: 2em;
-	color: #333;
-	margin: 0.25em 0 0.25em 0;
-}
-
-.vcard .about .bio {
-	color: #555;
-	padding: 0.5em 0 0.5em 0;
-	font-size: 1.25em;
-}
-
-.vcard .about .details {
-	font-size: 1em;
-	padding-bottom: 1em;
-	margin-bottom: 1em;
-}
-
-.vcard .about .details i {
-	padding-right: 0.3em;
-	color: #999;
-}
-
-.vcard .about .details span {
-	padding-right: 2.5em;
-	color: #555;
-}
-
-.vcard .social {
-	list-style: none;
-	list-style-type: none;
-	padding: 0;
-}
-
-.vcard .social li {
-	display: inline-block;
-	padding: 0.2em 0.2em;
-}
-
-.vcard .social li a {
-	text-decoration: none;
+header h2.name {
+	text-align: center;
+	text-shadow: 0 1px #4d4d46;
 	font-size: 3em;
-	color: #999;
+	font-weight: 300;
+	padding-top: 0.5em;
+	margin: 0;
 }
 
-.vcard .social li a i {
-	padding: 0.2em 0.1em;
+ul.social {
+	padding: 0;
+	margin: 0;
+	text-align: center;
 }
 
-.vcard .social li i {
-	color: #333;
+ul.social li {
+	display: inline-block;
+	font-size: 1.5em;
+	color: black;
+	padding: 1em;
 }
 
-.vcard:after {
-	clear: both;
+ul.social li i {
+	font-size: 2em;
+}
+
+ul.social li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul.social li.twitter i {
+	color: #55acee;
+}
+
+ul.social li.gplus i {
+	color: #e11c1f;
+}
+
+.content {
+	font-size: 1.5em;
+	padding: 0 2em;
+	color: #000;
 }
 
 footer {
-	width: 80%;
-	margin: 1em auto;
+	padding: 2.5em 0;
+	color: #e8ebd4;	
+	margin-top: 2.5em;
 	text-align: center;
-	font-size: 0.75em;
+	font-size: 1.25em;
 	color: #999;
 }
 
@@ -130,42 +90,9 @@ footer a {
 
 @media only screen and (max-width: 640px) {
 	body {
-		font-size: 14px;
+		font-size: 12px;
 	}
-
-	.vcard {
-		padding: 1.5em 0;
-		margin: 1em auto;
-		width: 90%;
+	.content {
+		margin-top: 0.5em;
 	}
-
-	.vcard:after {
-		clear: none;
-	}
-
-	.vcard .picture {
-		text-align: center;
-		float: none;
-		display: block;
-		width: 100%;
-	}
-
-	.vcard .about {
-		padding: 0;
-		text-align: center;
-		float: none;
-		display: block;
-		width: 100%;
-	}
-
-	.vcard .about .social {
-		padding-top: 1.25em;
-	}
-
-	.vcard .location, 
-	.vcard .envelope {
-		display: block;
-		font-size: 1.25em;
-	}
-
 }
