@@ -5,8 +5,11 @@ url: http://192.168.178.31:4000
 tracking: false
 show_drafts: true
 
+sass:
+  sass_dir: _sass
+
 # Settings
-exclude: ['.bowerrc', '.gitignore', 'bower.json']
+exclude: ['.bowerrc', '.gitignore', 'bower.json', 'Gemfile', 'Gemfile.lock']
 encoding: UTF-8
 timezone: Europe/Berlin
 relative_permalinks: false

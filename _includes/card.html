@@ -1,0 +1,12 @@
+<section class="grid no-gutters card">
+  <div class="unit whole inner">
+    <div class="picture">
+      <img src="{{ site.data.about.email | to_gravatar }}?s=200&amp;d=mm" alt="{{ site.data.about.name }}" />
+    </div>
+    <h2 class="name">{{ site.data.about.name }}</h2>
+    {% if site.data.about.subline %}
+      <h5 class="about">{{ site.data.about.subline }}</h5>
+    {% endif %}
+    {% include social.html %}
+  </div>
+</section>
