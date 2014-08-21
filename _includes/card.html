@@ -1,7 +1,7 @@
 <section class="grid no-gutters card">
   <div class="unit whole inner">
     <div class="picture">
-      <img src="{{ site.data.about.email | to_gravatar }}?s=200&amp;d=mm" alt="{{ site.data.about.name }}" />
+      <img src="http://www.gravatar.com/avatar/{{ site.data.about.gravatar_hash }}?s=200&amp;d=mm" alt="{{ site.data.about.name }}" />
     </div>
     <h2 class="name">{{ site.data.about.name }}</h2>
     {% if site.data.about.subline %}
