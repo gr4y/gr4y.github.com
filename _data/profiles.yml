@@ -1,13 +1,13 @@
 - url: http://blog.swessel.me
   alt: blog
   icon: fa-home
-- url: mailto://swessel@swessel.me
+- url: mailto:swessel@swessel.me
   alt: Mail
   icon: fa-envelope
 - url: https://github.com/gr4y
   alt: GitHub
   icon: fa-github
-- url: https://twitter.com/gr4y
+- url: https://twitter.com/gr4yweb
   alt: Twitter
   icon: fa-twitter
 - url: http://instagram.com/gr4yweb
