@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-Light-webfont.eot');
+    src: url('fonts/RobotoSlab-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoSlab-Light-webfont.woff') format('woff'),
+         url('fonts/RobotoSlab-Light-webfont.ttf') format('truetype'),
+         url('fonts/RobotoSlab-Light-webfont.svg#roboto_slablight') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-Regular-webfont.eot');
+    src: url('fonts/RobotoSlab-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoSlab-Regular-webfont.woff') format('woff'),
+         url('fonts/RobotoSlab-Regular-webfont.ttf') format('truetype'),
+         url('fonts/RobotoSlab-Regular-webfont.svg#roboto_slabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('fonts/RobotoSlab-Bold-webfont.eot');
+    src: url('fonts/RobotoSlab-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/RobotoSlab-Bold-webfont.woff') format('woff'),
+         url('fonts/RobotoSlab-Bold-webfont.ttf') format('truetype'),
+         url('fonts/RobotoSlab-Bold-webfont.svg#roboto_slabbold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
