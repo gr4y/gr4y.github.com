@@ -3,7 +3,7 @@ title: "Sascha Wessel"
 url: http://192.168.178.31:4000
 
 tracking: false
-show_drafts: true
+show_drafts: false
 
 sass:
   sass_dir: _sass
