@@ -1,0 +1,35 @@
+version: "3.3"
+
+networks:
+  web:
+    external: true
+
+services:
+  jekyllbuild:
+    build:
+      context: .
+      args:
+        build_command: "bundle exec jekyll serve --watch --drafts --incremental --config _config-dev.yml"
+    volumes:
+      - ".:/srv/jekyll"
+    ports:
+      - 4000:4000
+  nginx:
+    image: nginx
+    volumes:
+      - ".:/var/www/public"
+      - "./nginx/nginx.conf:/etc/nginx/nginx.conf"
+      - "./nginx/html/404.html:/usr/share/nginx/html/404.html"
+      - ./certs:/etc/certs
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      - web
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=web
+      - traefik.http.routers.site-swessel.rule=Host(`swessel.me`)
+      - traefik.http.routers.site-swessel.tls=true
+      - traefik.http.routers.site-swessel.tls.certresolver=lets-encrypt
+      - traefik.http.routers.site-swessel.entrypoints=websecure
